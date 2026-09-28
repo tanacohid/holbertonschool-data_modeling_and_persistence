@@ -1,2 +1,2 @@
 DELETE FROM books
-WHERE id = 8;
+WHERE published_year < 1950 AND price < 9;
