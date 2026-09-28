@@ -1,0 +1,3 @@
+SELECT genre, COUNT(*)
+FROM BOOKS
+GROUP BY genre;
