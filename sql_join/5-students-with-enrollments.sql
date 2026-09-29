@@ -1,5 +1,4 @@
-SELECT courses.title AS course_title, students.name AS student_name
-FROM courses
-LEFT JOIN enrollments ON courses.id = enrollments.course_id
-LEFT JOIN students ON enrollments.student_id = students.id
-ORDER BY course_title, student_name
+SELECT students AS student_name
+FROM students
+where student.id in (SELECT enrollments)
+ORDER BY student_name
