@@ -1,4 +1,4 @@
-SELECT students AS student_name
+SELECT student.name AS student_name
 FROM students
-where student.id in (SELECT enrollments)
-ORDER BY student_name
+where students.id in (SELECT student_id FROM enrollments)
+ORDER BY student_name;
