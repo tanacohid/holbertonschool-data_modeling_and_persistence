@@ -1,4 +1,3 @@
-SELECT stock
-FROM books
+UPDATE books
 SET stock = stock + 3
 WHERE stock < 5;
